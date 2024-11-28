@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.empty {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.movable {
+    background-color: #FF5733; /* 當前可移動的拼圖塊顯示為紅色 */
+    cursor: pointer; /* 顯示為可點擊的指標 */
+}

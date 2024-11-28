@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+    <h1>登入系統</h1>
+    <input type="text" id="username" placeholder="輸入用戶名">
+    <button id="login-btn">登入</button>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <h1>圈圈叉叉遊戲</h1>
+    <div id="game-board"></div>
+    <button id="restart-btn">重新開始</button>
+    <p id="game-status"></p>
+  </div>
+
+  <div id="ranking-container" style="display: none;">
+    <h2>玩家排行榜</h2>
+    <ul id="ranking-list"></ul>
+  </div>
+
+  <div id="history-container" style="display: none;">
+    <h2>歷史紀錄</h2>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
